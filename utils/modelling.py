@@ -50,8 +50,9 @@ def result_report(data):
     return(data)
 
 def print_classification_report(data):
-
-    print(classification_report(data["valid_y"], data['predictions']))
+    
+    target_names = list(data['y_map'].values())
+    print(classification_report(data["valid_y"], data['predictions'], target_names=target_names))
     
     return(data)
 
