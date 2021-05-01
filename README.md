@@ -1,2 +1,1 @@
-# ey
- ey_int
+# earning tagging assignment
